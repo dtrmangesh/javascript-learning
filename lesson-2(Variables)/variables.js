@@ -13,6 +13,7 @@ let phoneNumber = 2222222;
 // Boolean type variable
 let isVisible = true;
 const value = 6 > 3;
+
 // Array type variable 
 let books = ['Hybird Focus', 1000, true]; // Array can be anything
 
@@ -36,26 +37,30 @@ function showAlert() {
 }
 
 
-// The difference between var and let
+// The difference/problems between var and let
 
-// 1. Hoisting 
+// 1. Problem with Hoisting 
 myName = "Mangesh"; // You can actually declare a variable with var after you initialize it
 console.log(myName);
 var myName;
+
+// remove below commented code 
 
 // myLastName = " Datar";
 // console.log(myLastName);
 // let myLastName;
 
-// 2. Declare same variable multiple times
+// 2. Problem with same variable multiple times
+// you can define multiple variables with same name  with var
 var myName = 'Chris';
 var myName = 'Bob';
 
 // But you can't do this with let
-
-
 let firstName = "Mangesh";
 firstName = "Nachi"; // Will throught an error
+
+// Remove below commented code for let problem
+// let firstName ="Datar"
 
 // Naming Conventions for variables
 /*
